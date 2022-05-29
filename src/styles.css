@@ -2,3 +2,39 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+ul li {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline;
+}
+
+
+a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+.nav {
+  background: black;
+  color: white;
+}
+
+.totalcard {
+  position: absolute;
+    top: -5px;
+    color: white;
+    left: 250px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+
+.floatR  {
+  float: right;
+}

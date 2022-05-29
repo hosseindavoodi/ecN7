@@ -18,6 +18,7 @@ export default function App() {
     <div>
         <CartProvider>
       <Router>
+        <div className="nav">
         <ul>
           <li>
           <Link to="/"> home</Link>
@@ -26,6 +27,7 @@ export default function App() {
           <Link to="/Card"> Card</Link>
           </li>
         </ul>
+        </div>
      
       
 

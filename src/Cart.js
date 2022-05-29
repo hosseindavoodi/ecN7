@@ -20,7 +20,7 @@ const Cart = () => {
   if (isEmpty) return <h1 className="text-center"> Your cart isEmpty </h1>;
   return (
     <section className="container">
-      <div className="row jistufy-content-center">
+      <div className="jistufy-content-center">
         <div className="col-12">
           <h5>
             {" "}
@@ -75,14 +75,14 @@ const Cart = () => {
           </table>
 
           <div className="col-auto ms-auto">
-            <h2> total price: {cartTotal} EGP</h2>
+            <h2> total price: {cartTotal} $</h2>
           </div>
         </div>
-        <div className="col-auto mb-2">
-          <button onClick={() => emptyCart()} className="btn btn-danger ms-2">
+        <div className="mb-2 floatR">
+          <button onClick={() => emptyCart()} className="btn btn-danger ms-2 ">
             Clear Cart
           </button>
-          <button onClick={buy} className="btn btn-primary ms-2">
+          <button onClick={buy} className="btn btn-primary ms-2 ">
             Buy Now{" "}
           </button>
         </div>
