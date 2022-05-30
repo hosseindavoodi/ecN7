@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "react-use-cart";
 
 import ItemCard from "./ItemCard";
@@ -7,13 +7,17 @@ import data from "./data";
 
 const Home = () => {
   const {  totalItems } = useCart();
+  const [search, setSearch] = useState('')
   return (
     <>
       <p className="text-center mt-3 totalcard">cards total: {totalItems}</p>
+      <input type="text" onChange={(e)=>setSearch(e.target.value)} placeholder="search" />
       <section className="py-4 container">
         <div className="row justify-content-center">
           {data.product.map((item, index) => {
+            
             return (
+              item.title.toLowerCase().includes(search) ?
               <ItemCard
                 img={item.img}
                 price={item.price}
@@ -21,6 +25,8 @@ const Home = () => {
                 item={item}
                 key={index}
               />
+              :
+              ""
             );
           })}
         </div>

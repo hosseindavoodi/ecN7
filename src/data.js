@@ -21,6 +21,24 @@ const data = {
       title: "Banana",
       price: 6,
       img: img3
+    },
+    {
+      id: 4,
+      title: "Straberries",
+      price: 8,
+      img: img3
+    },
+    {
+      id: 5,
+      title: "Wather mellon",
+      price: 4,
+      img: img3
+    },
+    {
+      id: 6,
+      title: "Peach",
+      price: 9,
+      img: img3
     }
   ]
 };
