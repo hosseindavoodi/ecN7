@@ -27,7 +27,14 @@ a {
   position: absolute;
     top: -5px;
     color: white;
-    left: 250px;
+    left: 160px;
+    width: 30px;
+    height: 30px;
+    background: rgb(0, 172, 26);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
 }
 
 .container {
@@ -37,4 +44,14 @@ a {
 
 .floatR  {
   float: right;
+}
+
+.searchbox {
+  position: absolute;
+    top: 15px;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+    right: 20px;
+    width: 250px;
 }

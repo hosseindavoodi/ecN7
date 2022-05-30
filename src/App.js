@@ -2,7 +2,6 @@ import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import Cart from "./Cart";
-import { useCart } from "react-use-cart";
 
 import { CartProvider } from "react-use-cart";
 import { 

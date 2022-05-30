@@ -10,8 +10,8 @@ const Home = () => {
   const [search, setSearch] = useState('')
   return (
     <>
-      <p className="text-center mt-3 totalcard">cards total: {totalItems}</p>
-      <input type="text" onChange={(e)=>setSearch(e.target.value)} placeholder="search" />
+      <div className="text-center mt-3 totalcard"> {totalItems}</div>
+      <input type="text" className="searchbox" onChange={(e)=>setSearch(e.target.value)} placeholder="search" />
       <section className="py-4 container">
         <div className="row justify-content-center">
           {data.product.map((item, index) => {
